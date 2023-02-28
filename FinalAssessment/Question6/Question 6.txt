@@ -1,0 +1,39 @@
+Question 6
+
+Assumptions and justifications:
+To my understanding, the assignment asked to display the shortest path in terms of remote/controller key movements such as left, right, up 
+and down. However, I could not achieve this instead my shortest path in the assignment was in terms of the keys traversed such as M, J, K, 
+L, O but because of the way I structured the edges, the path of keys traversed as if a person was pressing only left, right, up and down 
+buttons. There were also a few other minor issues with the other parts of the assignment. Hence when answering the questions of question 6,
+I will be assuming I have a perfect working assignment.
+
+6a)
+To display the 2 keyboards shown, I would use the Tkinter GUI python library to create a GUI each for both keyboards. Each keyboard would also have its own
+graph that will determine the keys added and their edges and they will be made accordingly to the keyboard's nature. Both keyboards will also have their cursor 
+starting at the letter A. Keyboard 1 (blue keyboard) has up, down, left and right movements, while keyboard 2 (white keyboard) only has left and right movements for
+typing letters. Hence their key edges will be made accordingly to the remote movements for traversing the keyboard. The keyboard 2 appears to be able to search for people's contacts hence when
+implementing it, I will also create a csv file containing fake people's names and their contact numbers. The contact details will be stored
+using a hash table and only names will be displayed in the GUI. When a name is entered into the search bar, the bottom right will show the
+shortest path and the blue button will jump to the name of the desired person in the contact list. Silent and Interactive versions of
+KeyMeUp will also be updated accordingly to accomodate for the 2 new keyboards. 
+
+6b)
+Keyboard 1 (blue keyboard) has up, down, left and right movements, while keyboard 2 (white keyboard) only has left and right movements for
+typing letters. If the time it takes to press remote/controller buttons are the same on both keyboards, keyboard 1 will enter its text faster than keyboard 2.
+The number of path movements will also be shorter for keyboard 1 compared to keyboard 2. This is because of the nature of both keyboards. A function should
+be implemented so that each movement path event takes 1 second.
+
+For example when searching for the text 'Amy', keyboard 1 has the following path:
+Enter -> down -> right x 5 -> enter.
+
+There are 8 events, hence it takes 8 seconds for keyboard 1 to enter the text 'Amy'.
+
+Keyboard 2 has the following path:
+Enter -> right x 13 -> enter -> right x12 -> enter
+
+There are 28 events, hence it takes 28 seconds for keyboard 2 to enter the text 'Amy'.
+
+6c)
+To my understanding, due to the vagueness of the question and picture, the strategy is that the entered text also enters below the search bar and it splits the
+text into groups of 4 entered inputs. This can be supported/made in a keyboard in my assignment by using Tkinter to create the bottom space and I can also code
+the behaviour of splitting the entered text into groups of 4 inputs.

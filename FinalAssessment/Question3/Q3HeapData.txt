@@ -1,0 +1,11 @@
+10 Ten
+30 Thirty
+50 Fifty
+70 Seventy
+90 Ninety
+20 Twenty
+40 Forty
+50 Fifty
+60 Sixty
+80 Eighty
+100 OneHundred

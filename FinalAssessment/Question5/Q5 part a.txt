@@ -1,0 +1,30 @@
+Question 5 part a
+
+After familiarising myself with the data in 6degrees.csv, I have examined that the data is sorted into columns Movie,Year,,Actor,,Role.
+To represent the connections between the columns as a graph to answer particularly part c of question 5, I will be making the desired
+actor and the movies that he/she is in graph vertexs for displayActorsMovies(name). For displayMovieActors(name), I will be making the
+desired movie and its actors graph vertexs. To accomplish isolating the actors and movies into vertexes easily in python, I will be using 
+the pandas library. The following diagrams visualise the vertexes and its edges depending on the function:
+
+displayActorsMovies(name)
+
+actor -> Movie
+  |
+  v
+Movie
+
+The arrows represent the edges that the actor vertex has. The actor has edges to movies but movies dont have edges to the actor or other
+movies. When the program is executed, only the actor vertex and all its edges to movies will be printed. 
+Actor (actor vertex) | Movie (edges)
+
+displayMovieActors(name)
+
+Movie -> actor
+  |
+  V
+actor
+
+The arrows represent the edges that a movie vertex has. The movie has edges to actors but actos do not have edges to the movie or other
+actors. When the program is executed, only the movie vertex and all its edges to actors will be printed.
+Movie (movie vertex) | Actor (edges)
+

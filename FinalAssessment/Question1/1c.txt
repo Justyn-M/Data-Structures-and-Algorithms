@@ -1,0 +1,24 @@
+A = [0,1,1,1,2,2,2,9]
+
+quicksort(A)
+q_rec(A, l_index, r_index)
+do_part(A, l_index, r_index, p_index)
+
+q_rec(A, 0, 7)
+    do_part(A, 0, 7, 4)
+    q_rec(A, 0, 3)
+        do_part(A, 0, 3, 1)
+        q_rec(A, 0, 0)
+        q_rec(A, 2, 3)
+            do_part(A, 2, 3, 3)
+            q_rec(A, 2, 2)
+            q_rec(A, 4, 3)
+    q_rec(A, 5, 7)
+        do_part(A, 5, 7, 6)
+        q_rec(A, 5, 4)
+        q_rec(A, 6, 7)
+            do_part(A, 6, 7, 7)
+            q_rec(A, 6, 5)
+            q_rec(A, 8, 7)
+
+A = [0,1,1,1,2,2,2,9]

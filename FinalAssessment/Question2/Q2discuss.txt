@@ -1,0 +1,28 @@
+When deleting a value from a binary search tree, I would first find the node attributed to the value and examine if it has other nodes branching off it. If it is a child node that has no
+values branching off from it, I would simply delete that node without editing anything else on the tree. Secondly, if the node has 1 branch going off from it, I will delete the node and 
+its outgoing branch then move the branch that previously pointing to the deleted node to the next node that the deleted node was pointing at. For example if I wanted to delete the value 75
+and upon examining the tree see that 55 points at 75 which points at 60, I would delete 75 and its branch and make 55 point to 60. Thirdly, if the value's node that I want to delete had 2 or
+more branches pointing out from it, I would examine the branched out nodes values and take the node with the smallest value and replace it in the node with the value that I want to delete.
+For example if 60 points to 55 and 65, I would delete 60 and move 55 to take its place so that 55 points to 65. Lastly, if the tree had multiple nodes with the same value, I would find the
+shallowest/first node with the designated value and replace it with the node with a value that is smaller than it but has the closest value. For example, to delete 55 when there are many
+55s in the tree, I would find the first 55 when traversing the tree, then find the values lower but closest to it for example 54, then delete 55 and and replace it with the node with the
+value of 54.
+
+Deleting a node from a red-black tree would uncover a similar process when deleting a value. If the designated value's node had no branches off it, I would simply delete the node and the
+branch that was pointing to it. If the designated value's node had 1 branch pointing out from it, I would replace the designated value's node (deleting the designated value and moving the 
+next value) with the value of the branched out node. The color of the node would still be the same. For example if 60 black points at 55 red, 60 black would be deleted, moving 55 red to
+take its place and then change 55 red to 55 black. If the designated value's node pointed at 2 of more nodes, I would again find the smallest value and move it into the designated
+value's node, in turn deleting the designated value's node. The color of the moved node will be the color of the deleted value's node. Finally, if the tree had multiple nodes with the same
+value, I would traverse the tree, find the first node with designated value and delete it according to the rules previously said. 
+
+When deleting a value from a 2-3-4 tree that is not a leaf node, I will replace the value with its next greatest node that it is branching out towards. When deleting a leaf node from a 2-3-4
+tree, if the value's node is a 3 or 4 node, I would only delete the value, however if it is a 2 node, I will also convert all other 2 nodes faced when traversing the tree to 3 or 4 nodes
+depending on the situation. 
+
+When a B-Tree's node is a leaf node, the node will always have 2 or more children nodes. When I delete a value off a B-Tree, if the designated value's node has 2 or more branches off it
+and no other connected nodes, I would again follow the same process as when deleting a node with 2 outgoing branches in a binary search tree. However if the designated values node has other 
+connected branches and all of them have more than 1 branch pointing out of them, I would first delete the designated value, move the node with the value closest but smaller than it to take 
+its place, move the smallest value branching off from the newly replaced node 1 level lower and move the newly replaced node 1 level lower as well and connect it with the smallest node on 
+either side of it.
+
+ 
